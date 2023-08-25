@@ -1,9 +1,9 @@
-import Welcome from '@/components/Welcome'
+import Firstpage from '@/components/Firstpage'
 
 export default function Home() {
   return (
    <main>
-    <Welcome />
+    <Firstpage/>
    </main>
   )
 }
