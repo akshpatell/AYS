@@ -1,0 +1,46 @@
+/* 
+$aksh: brown;
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: dodgerblue;
+    user-select: none;
+}
+
+.heading1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $aksh;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: dodgerblue;
+    user-select: none;
+} */
+
+header {
+  display: flex;
+
+  & > .logo {
+    color: blue;
+
+    &.logo1 {
+      color: red;
+    }
+  }
+  & > nav {
+    background-color: bisque;
+
+    & > ul {
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
