@@ -1,19 +1,21 @@
 import React from "react";
+import Link from "next/link";
 
 const Welcome = () => {
+ 
   return (
     <>
     <div className="w-full flex  flex-col items-center justify-center absolute top-[35%]">
 
       <div className="text-center">
-        <p className="text-8xl max-md:text-6xl max-sm:text-4xl">Welcome User👋</p>
+        <p className="text-8xl max-md:text-6xl max-sm:text-4xl max-lg:text-5xl">Welcome Geek👋</p>
       </div>
       <div className="flex gap-3 md:gap-5 justify-center mt-5 md:mt-8">
         <div className="border px-3 py-2 rounded text-white bg-red-500 ">
           <button className="w-full">Buy Us Coffee</button>
         </div>
         <div className="border px-3 py-2 rounded text-white bg-black ">
-          <button className="w-full">Make Readme</button>
+          <Link className="w-full" href="/firstpage">Make Readme</Link>
         </div>
       </div>
 
