@@ -1460,7 +1460,7 @@ const Thirdpage = () => {
           </div>
 
           <div className="outline-none border-b-2 p-2 text-xl">Automation</div>
-          <div className="grid grid-cols-4 gap-5 py-3">
+          <div className="grid grid-cols-4 gap-5 py-3 max-sm:grid-cols-2 max-md:grid-cols-3">
             <div className="flex justify-center items-center py-2 gap-3">
               <input type="checkbox" className="cursor-pointer w-5 h-5" />
               <div className="flex flex-col items-center justify-center">
