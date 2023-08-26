@@ -6,7 +6,7 @@ import { AiOutlineRight } from "react-icons/ai";
 const Secondpage = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center sm:h-[100vh]">
+      <div className="flex flex-col justify-center items-center sm:h-[100vh] my-5">
         <div>
           <p className="text-5xl text-center max-sm:text-3xl max-lg:text-4xl">
             Work Information💼
