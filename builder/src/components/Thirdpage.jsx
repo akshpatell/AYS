@@ -1537,7 +1537,7 @@ const Thirdpage = () => {
             </Link>
             <Link
               className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md"
-              href="/frothpage"
+              href="/forthpage"
             >
               Next
               <AiOutlineRight />
