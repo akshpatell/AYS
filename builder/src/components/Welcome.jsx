@@ -13,22 +13,24 @@ const Welcome = () => {
           </p>
         </div>
         <div className="flex gap-3 md:gap-5 justify-center mt-5 md:mt-8">
-          <div className="border px-3 py-2 rounded text-white bg-red-500 ">
-            <button className="w-full flex gap-2 items-center">
+          <div>
+            <button className="w-full flex gap-2 items-center border px-3 py-2 rounded text-white bg-red-500 ">
               Buy Us Coffee
               <Image
-                src="/images/coffeescript.png"
+                src="/images/Buy-Us-Coffee.png"
                 alt="img"
                 width={20}
                 height={20}
               />
             </button>
           </div>
-          <div className="border px-3 py-2 rounded text-white bg-black ">
-            <Link className="w-full" href="/firstpage">
-              Make Readme
-            </Link>
-          </div>
+          <button>
+            <div className="border px-3 py-2 rounded text-white bg-black ">
+              <Link className="w-full" href="/firstpage">
+                Make Readme
+              </Link>
+            </div>
+          </button>
         </div>
 
         <div className="mt-5 md:mt-8 flex justify-center items-center border-b-2 w-[40vw] max-lg:w-[60vw] max-md:w-[80vw] max-sm:w-[92vw]">

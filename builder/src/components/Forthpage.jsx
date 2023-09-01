@@ -8,7 +8,7 @@ import { AiOutlineRight } from "react-icons/ai";
 const Forthpage = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center sm:h-[100vh]">
+      <div className="flex flex-col justify-center items-center h-full">
         <div>
           <p className="text-5xl text-center max-sm:text-3xl max-lg:text-4xl p-3">
             Social

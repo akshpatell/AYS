@@ -8,7 +8,7 @@ const Sixpage = () => {
     <>
       <div className="flex flex-col justify-center items-center h-[100vh] gap-5 ">
         <div className="text-center flex items-center">
-          <p className="text-8xl max-md:text-6xl max-sm:text-3xl max-lg:text-5xl">
+          <p className="text-8xl max-sm:text-3xl max-md:text-5xl max-lg:text-6xl">
             ThankYou Geek
           </p>
           <Image
@@ -19,9 +19,11 @@ const Sixpage = () => {
             height={20}
           />
         </div>
-        <div className="border px-3 py-3 rounded text-white bg-red-500 ">
+        <button>
+        <div className="px-3 py-3 rounded text-white bg-red-500 ">
           <Link className="w-full" href="/">Back To HomePage 🙂</Link>
         </div>
+        </button>
       </div>
     </>
   );
