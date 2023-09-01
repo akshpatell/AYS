@@ -1,3 +1,4 @@
+"use client"
 import Sixpage from "@/components/Sixpage";
 
 export default function Home(){

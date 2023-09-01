@@ -1,3 +1,4 @@
+"use client"
 import Fifthpage from "@/components/Fifthpage";
 
 export default function Home(){

@@ -1,3 +1,4 @@
+"use client"
 import Thirdpage from "@/components/Thirdpage";
 
 export default function Home(){

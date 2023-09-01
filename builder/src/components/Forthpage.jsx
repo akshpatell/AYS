@@ -18,7 +18,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/github.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="github username"
               name="text"
@@ -27,7 +27,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/twitter.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="twitter username"
               name="text"
@@ -36,7 +36,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/stackoverflow.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="stackoverflow user ID"
               name="text"
@@ -45,7 +45,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/linkedin.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="linkedin username"
               name="text"
@@ -54,7 +54,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/instagramgif.gif" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="instagram username"
               name="text"
@@ -63,7 +63,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/facebook.png" alt="img" width={30} height={20} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="facebook username"
               name="text"
@@ -72,7 +72,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/devgif.gif" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="dev. to username"
               name="text"
@@ -81,7 +81,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/codepen.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="codepen username"
               name="text"
@@ -90,7 +90,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/codesandbox.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="codesandbox username"
               name="text"
@@ -99,7 +99,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/kaggle.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="kaggle username"
               name="text"
@@ -108,7 +108,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/dribbble.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="dribbble username"
               name="text"
@@ -117,7 +117,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/behance.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="behance username"
               name="text"
@@ -126,7 +126,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/hashnode.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="hashnode username (with @)"
               name="text"
@@ -135,7 +135,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/medium.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="medium username (with @)"
               name="text"
@@ -144,7 +144,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/youtube.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="youtube channel name"
               name="text"
@@ -153,7 +153,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/codechef.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="codechef username"
               name="text"
@@ -162,7 +162,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/hackerrank.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="hackerrank username"
               name="text"
@@ -171,7 +171,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/codeforces.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="codeforces username"
               name="text"
@@ -180,7 +180,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/leetcode.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="leetcode username"
               name="text"
@@ -189,7 +189,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/topcoder.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="topcoder username"
               name="text"
@@ -198,7 +198,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/github.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="hackerearth user (with @)"
               name="text"
@@ -207,7 +207,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/gfg.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="GFG (<username>/profile)"
               name="text"
@@ -216,7 +216,7 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/discord.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
+              className="border-b-2 w-[300px] outline-none"
               id="text"
               placeholder="discord invite (only code)"
               name="text"
@@ -225,8 +225,9 @@ const Forthpage = () => {
           <div className="flex justify-center gap-2 ">
             <Image src="/images/rss.png" alt="img" width={30} height={200} />
             <input
-              className="border-b-2 w-[300px]"
-              id="text"
+              className="border-b-2 w-[300px] outline-none"
+              type="url"
+              id="url"
               placeholder="RSS feed URL"
               name="text"
             />
