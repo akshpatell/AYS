@@ -15,7 +15,9 @@ const Welcome = () => {
         <div className="flex gap-3 md:gap-5 justify-center mt-5 md:mt-8">
           <div>
             <button className="w-full flex gap-2 max-sm:gap-1 items-center px-2 py-2 rounded text-white bg-red-500 ">
-              Buy Us Coffee
+              <Link href="/donatepage" className="w-full">
+                Buy Us Coffee
+              </Link>
               <Image
                 src="/images/Buy-Us-Coffee.gif"
                 alt="img"
@@ -29,7 +31,7 @@ const Welcome = () => {
               <Link className="w-full" href="/firstpage">
                 Make Readme
               </Link>
-                <Image
+              <Image
                 src="/images/makeReadme.gif"
                 alt="img"
                 width={20}
