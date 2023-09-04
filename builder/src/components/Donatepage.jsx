@@ -7,7 +7,7 @@ class DonationForm extends Component {
     this.state = {
       name: "",
       email: "",
-      amount: "",
+      amount: "10",
       selectedCurrency: "usd",
       isLoading: false,
       paymentComplete: false,
@@ -66,6 +66,7 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.name}
               onChange={this.handleInputChange}
+              placeholder="name"
             />
             <label className="block font-semibold mb-2">Email:</label>
             <input
@@ -74,6 +75,7 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.email}
               onChange={this.handleInputChange}
+              placeholder="your123@gmail.com"
             />
             <label className="block font-semibold mb-2">Donation Amount:</label>
             <input
@@ -82,6 +84,7 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={amount}
               onChange={this.handleInputChange}
+              placeholder="number"
             />
             <div className="flex mb-4">
               <label className="block font-semibold mb-2 mr-4">Currency:</label>
