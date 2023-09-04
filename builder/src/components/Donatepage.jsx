@@ -7,10 +7,12 @@ class DonationForm extends Component {
     this.state = {
       name: '',
       email: '',
-      amount: 10,
+      amount: '', // Amount entered by the user
+      selectedCurrency: 'usd', // Default currency selection (USD)
       isLoading: false,
       paymentComplete: false,
       error: null,
+      conversionRate: 72, // 1 USD = 72 INR (example rate)
     };
   }
 
@@ -19,6 +21,18 @@ class DonationForm extends Component {
     this.setState({ isLoading: true });
 
     try {
+      const { amount, selectedCurrency } = this.state;
+      let convertedAmount = amount;
+
+      if (selectedCurrency === 'inr') {
+        convertedAmount = (amount / this.state.conversionRate).toFixed(2);
+      }
+
+      // You can use `convertedAmount` for payment processing
+      console.log(`Amount in ${selectedCurrency.toUpperCase()}: ${convertedAmount}`);
+
+      // Simulating a successful payment
+      // In a real implementation, send payment data to your server and handle the response accordingly
       await new Promise((resolve) => setTimeout(resolve, 2000));
       this.setState({ paymentComplete: true, isLoading: false });
     } catch (error) {
@@ -27,10 +41,18 @@ class DonationForm extends Component {
   };
 
   handleInputChange = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
+  handleCurrencyChange = (event) => {
+    const selectedCurrency = event.target.value;
+    this.setState({ selectedCurrency });
   };
 
   render() {
+    const { amount, selectedCurrency } = this.state;
+
     return (
       <div className="bg-white text-black min-h-screen flex flex-col justify-center items-center max-sm:mx-2">
         <div className="bg-gray-200 max-w-md w-full p-6 rounded-lg shadow-lg">
@@ -43,7 +65,6 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.name}
               onChange={this.handleInputChange}
-              placeholder="name"
             />
             <label className="block font-semibold mb-2">Email:</label>
             <input
@@ -52,20 +73,41 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.email}
               onChange={this.handleInputChange}
-              placeholder="email"
             />
-            <label className="block font-semibold mb-2">Donation Amount ($):</label>
+            <label className="block font-semibold mb-2">Donation Amount:</label>
             <input
               type="number"
               name="amount"
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
-              value={this.state.amount}
+              value={amount}
               onChange={this.handleInputChange}
-              placeholder="number"
             />
+            <div className="flex mb-4">
+              <label className="block font-semibold mb-2 mr-4">Currency:</label>
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  name="selectedCurrency"
+                  value="usd"
+                  checked={selectedCurrency === 'usd'}
+                  onChange={this.handleCurrencyChange}
+                />
+                <span className="ml-2">USD</span>
+              </label>
+              <label className="inline-flex items-center ml-4">
+                <input
+                  type="radio"
+                  name="selectedCurrency"
+                  value="inr"
+                  checked={selectedCurrency === 'inr'}
+                  onChange={this.handleCurrencyChange}
+                />
+                <span className="ml-2">INR</span>
+              </label>
+            </div>
             <button
               type="submit"
-              className="bg-black text-white rounded-full py-3 px-6 hover:bg-gray-800 hover:text-white transition-colors duration-300"
+              className="bg-blue-500 text-white rounded-full py-3 px-6 hover:bg-blue-700 hover:text-white transition-colors duration-300"
               disabled={this.state.isLoading}
             >
               Donate
