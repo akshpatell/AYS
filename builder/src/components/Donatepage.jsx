@@ -1,18 +1,18 @@
 "use client";
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class DonationForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      amount: '', // Amount entered by the user
-      selectedCurrency: 'usd', // Default currency selection (USD)
+      name: "",
+      email: "",
+      amount: "",
+      selectedCurrency: "usd",
       isLoading: false,
       paymentComplete: false,
       error: null,
-      conversionRate: 72, // 1 USD = 72 INR (example rate)
+      conversionRate: 72,
     };
   }
 
@@ -24,19 +24,18 @@ class DonationForm extends Component {
       const { amount, selectedCurrency } = this.state;
       let convertedAmount = amount;
 
-      if (selectedCurrency === 'inr') {
+      if (selectedCurrency === "inr") {
         convertedAmount = (amount / this.state.conversionRate).toFixed(2);
       }
 
-      // You can use `convertedAmount` for payment processing
-      console.log(`Amount in ${selectedCurrency.toUpperCase()}: ${convertedAmount}`);
+      console.log(
+        `Amount in ${selectedCurrency.toUpperCase()}: ${convertedAmount}`
+      );
 
-      // Simulating a successful payment
-      // In a real implementation, send payment data to your server and handle the response accordingly
       await new Promise((resolve) => setTimeout(resolve, 2000));
       this.setState({ paymentComplete: true, isLoading: false });
     } catch (error) {
-      this.setState({ error: 'Payment failed', isLoading: false });
+      this.setState({ error: "Payment failed", isLoading: false });
     }
   };
 
@@ -56,7 +55,9 @@ class DonationForm extends Component {
     return (
       <div className="bg-white text-black min-h-screen flex flex-col justify-center items-center max-sm:mx-2">
         <div className="bg-gray-200 max-w-md w-full p-6 rounded-lg shadow-lg">
-          <h1 className="text-3xl font-semibold mb-6 text-center">Support Us</h1>
+          <h1 className="text-3xl font-semibold mb-6 text-center">
+            Support Us
+          </h1>
           <form onSubmit={this.handleSubmit}>
             <label className="block font-semibold mb-2">Name:</label>
             <input
@@ -89,7 +90,7 @@ class DonationForm extends Component {
                   type="radio"
                   name="selectedCurrency"
                   value="usd"
-                  checked={selectedCurrency === 'usd'}
+                  checked={selectedCurrency === "usd"}
                   onChange={this.handleCurrencyChange}
                 />
                 <span className="ml-2">USD</span>
@@ -99,7 +100,7 @@ class DonationForm extends Component {
                   type="radio"
                   name="selectedCurrency"
                   value="inr"
-                  checked={selectedCurrency === 'inr'}
+                  checked={selectedCurrency === "inr"}
                   onChange={this.handleCurrencyChange}
                 />
                 <span className="ml-2">INR</span>
@@ -113,10 +114,14 @@ class DonationForm extends Component {
               Donate
             </button>
             {this.state.error && (
-              <p className="text-red-500 font-semibold mt-4">{this.state.error}</p>
+              <p className="text-red-500 font-semibold mt-4">
+                {this.state.error}
+              </p>
             )}
             {this.state.paymentComplete && (
-              <p className="text-green-500 font-semibold mt-4">Payment successful!</p>
+              <p className="text-green-500 font-semibold mt-4">
+                Payment successful!
+              </p>
             )}
           </form>
         </div>
