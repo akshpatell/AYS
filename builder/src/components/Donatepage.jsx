@@ -32,7 +32,7 @@ class DonationForm extends Component {
 
   render() {
     return (
-      <div className="bg-white text-black min-h-screen flex flex-col justify-center items-center">
+      <div className="bg-white text-black min-h-screen flex flex-col justify-center items-center max-sm:mx-2">
         <div className="bg-gray-200 max-w-md w-full p-6 rounded-lg shadow-lg">
           <h1 className="text-3xl font-semibold mb-6 text-center">Support Us</h1>
           <form onSubmit={this.handleSubmit}>
@@ -43,6 +43,7 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.name}
               onChange={this.handleInputChange}
+              placeholder="name"
             />
             <label className="block font-semibold mb-2">Email:</label>
             <input
@@ -51,6 +52,7 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.email}
               onChange={this.handleInputChange}
+              placeholder="email"
             />
             <label className="block font-semibold mb-2">Donation Amount ($):</label>
             <input
@@ -59,9 +61,8 @@ class DonationForm extends Component {
               className="w-full px-4 py-2 bg-white text-black border border-gray-400 rounded mb-4"
               value={this.state.amount}
               onChange={this.handleInputChange}
+              placeholder="number"
             />
-            <div className="card-element">
-            </div>
             <button
               type="submit"
               className="bg-black text-white rounded-full py-3 px-6 hover:bg-gray-800 hover:text-white transition-colors duration-300"
