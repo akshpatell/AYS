@@ -54,7 +54,7 @@ class DonationForm extends Component {
 
     return (
       <div className="bg-white text-black min-h-screen flex flex-col justify-center items-center max-sm:mx-2">
-        <div className="bg-gray-200 max-w-md w-full p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-200 max-w-md w-full p-6 rounded-lg shadow-lg max-sm:bg-white max-sm:border max-sm:border-gray-400 max-md:bg-gray-100">
           <h1 className="text-3xl font-semibold mb-6 text-center">
             Support Us
           </h1>
