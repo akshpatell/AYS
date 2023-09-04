@@ -17,7 +17,7 @@ const Welcome = () => {
             <button className="w-full flex gap-2 max-sm:gap-1 items-center px-2 py-2 rounded text-white bg-red-500 ">
               Buy Us Coffee
               <Image
-                src="/images/Buy-Us-Coffee.png"
+                src="/images/Buy-Us-Coffee.gif"
                 alt="img"
                 width={20}
                 height={20}
