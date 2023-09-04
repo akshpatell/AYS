@@ -14,7 +14,7 @@ const Welcome = () => {
         </div>
         <div className="flex gap-3 md:gap-5 justify-center mt-5 md:mt-8">
           <div>
-            <button className="w-full flex gap-2 max-sm:gap-1 items-center border px-2 py-2 rounded text-white bg-red-500 ">
+            <button className="w-full flex gap-2 max-sm:gap-1 items-center px-2 py-2 rounded text-white bg-red-500 ">
               Buy Us Coffee
               <Image
                 src="/images/Buy-Us-Coffee.png"
@@ -25,7 +25,7 @@ const Welcome = () => {
             </button>
           </div>
           <button>
-            <div className="gap-2 max-sm:gap-1 flex border px-2 py-2 rounded text-white bg-black items-center ">
+            <div className="gap-2 max-sm:gap-1 flex px-2 py-2 rounded text-white bg-black items-center ">
               <Link className="w-full" href="/firstpage">
                 Make Readme
               </Link>
@@ -47,7 +47,7 @@ const Welcome = () => {
             name="email"
             placeholder="Subscribe to Get Connected!"
           />
-          <button className="px-3 py-1 bg-blue-500 text-white border-b-2 flex-[1] rounded">
+          <button className="px-3 py-1 bg-blue-500 text-white flex-[1] rounded">
             Subscribe
           </button>
         </div>
