@@ -30,7 +30,7 @@ const Welcome = () => {
                 Make Readme
               </Link>
                 <Image
-                src="/images/makeReadme.gif"
+                src="/images/makereadme.gif"
                 alt="img"
                 width={20}
                 height={20}
