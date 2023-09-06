@@ -11,6 +11,10 @@ const Welcome = () => {
           <p className="text-8xl max-md:text-6xl max-sm:text-4xl max-lg:text-5xl">
             Welcome Geek👋
           </p>
+          <audio controls autoPlay className="hidden">
+            <source src="/audio/welcome.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
         <div className="flex gap-3 md:gap-5 justify-center mt-5 md:mt-8">
           <div>
