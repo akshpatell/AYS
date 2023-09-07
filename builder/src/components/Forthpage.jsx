@@ -236,14 +236,14 @@ const Forthpage = () => {
           <div className="flex flex-row gap-10 pt-4 w-full justify-center mb-3">
             <Link
               className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md max "
-              href="/thirdpage"
+              href="/skills"
             >
               <AiOutlineLeft />
               Prev
             </Link>
             <Link
               className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md"
-              href="/fifthpage"
+              href="/addons"
             >
               Next
               <AiOutlineRight />

@@ -32,7 +32,7 @@ const Welcome = () => {
           </div>
           <button>
             <div className="gap-2 max-sm:gap-1 flex px-2 py-2 rounded text-white bg-black items-center ">
-              <Link className="w-full" href="/firstpage">
+              <Link className="w-full" href="/profile">
                 Make Readme
               </Link>
               <Image

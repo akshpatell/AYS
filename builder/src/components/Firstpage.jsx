@@ -61,7 +61,7 @@ const Firstpage = () => {
             <div className="flex flex-row gap-10 pt-4 w-full justify-center">
 
             <Link className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md max " href="/"><AiOutlineLeft/>Home</Link>
-            <Link className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md" href="/secondpage">Next<AiOutlineRight/></Link>
+            <Link className="flex items-center justify-center py-2 px-4 bg-red-500 text-white rounded-md" href="/work">Next<AiOutlineRight/></Link>
 
             </div>
           </div>
