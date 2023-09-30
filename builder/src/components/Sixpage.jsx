@@ -24,12 +24,15 @@ const Sixpage = () => {
           />
         </div>
         <button>
-          <div className="px-3 py-3 rounded text-white bg-red-500 ">
+          <div className="px-3 py-3 rounded text-white bg-red-500">
             <Link className="w-full" href="/">
               Back To HomePage 🙂
             </Link>
           </div>
         </button>
+      <div className="flex justify-end">
+        - Created by Aksh Patel
+        </div>
       </div>
     </>
   );
