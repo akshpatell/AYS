@@ -30,7 +30,7 @@ const Sixpage = () => {
             </Link>
           </div>
         </button>
-      <div className="flex justify-end">
+      <div>
         - Created by Aksh Patel
         </div>
       </div>
